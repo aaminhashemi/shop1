@@ -1,7 +1,7 @@
 @font-face {
   font-family: "irs";
   font-size: 14px;
-  src: url("/font/iransans/woff2/IranSans.woff2") format("woff2"), url("/font/iransans/woff/IranSans.woff") format("woff");
+  src: url("../font/iransans/woff2/IranSans.woff2") format("woff2"), url("/font/iransans/woff/IranSans.woff") format("woff");
 }
 .main-image{
     height: 450px;
