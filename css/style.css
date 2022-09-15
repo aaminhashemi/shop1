@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "irs";
+  font-size: 14px;
+  src: url("/font/iransans/woff2/IranSans.woff2") format("woff2"), url("/font/iransans/woff/IranSans.woff") format("woff");
+}
+.main-image{
+    height: 450px;
+    width: 100%;
+    background-image: url('/img//header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: irs;
+}
+body{
+    padding: 0;
+    margin: 0;
+    width: 100vw !important;
+    overflow-x: hidden
+}
+.checked {
+    color: orange;
+  }
+  .card-header-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .img-width{
+    width: 150px !important;
+    height: 218px !important;
+  }
+  .card-footer-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .heart-background{
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    background-color: violet;
+  }
