@@ -6,18 +6,14 @@
 .main-image{
     height: 450px;
     width: 100%;
-    background-image: url('img/header.jpg');
+    background-image: url('../img/header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 *{
-    padding: 0;
-    margin: 0;
     font-family: irs;
 }
 body{
-    padding: 0;
-    margin: 0;
     width: 100vw !important;
     overflow-x: hidden
 }
@@ -30,8 +26,8 @@ body{
     justify-content: space-around;
   }
   .img-width{
-    width: 150px !important;
-    height: 218px !important;
+    width: 250px !important;
+    max-height: 208px !important;
   }
   .card-footer-flex{
     display: flex;
@@ -41,8 +37,34 @@ body{
   .heart-background{
     width: 35px;
     height: 35px;
+    padding: 9px;
     text-align: center;
     vertical-align: middle;
     border-radius: 50%;
     background-color: violet;
+  }
+  footer{
+    background-color:  rgb(114, 114, 114);
+    color: rgb(255, 255, 255);
+
+  }
+  .footer-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .footer-about-us{
+    text-justify: newspaper;
+  }
+  .card{
+    box-shadow: 10px 5px 5px rgb(167 ,167 ,167);
+  }
+  .heart-background:hover {
+    width: 50px;
   }
