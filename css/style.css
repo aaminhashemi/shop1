@@ -1,70 +1,87 @@
 @font-face {
   font-family: "irs";
   font-size: 14px;
-  src: url("../font/iransans/woff2/IranSans.woff2") format("woff2"), url("/font/iransans/woff/IranSans.woff") format("woff");
+  src: url("/font/iransans/woff2/IranSans.woff2") format("woff2"),
+    url("/font/iransans/woff/IranSans.woff") format("woff");
 }
-.main-image{
-    height: 450px;
-    width: 100%;
-    background-image: url('../img/header.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+.main-image {
+  height: 450px;
+  width: 100%;
+  background-image: url("../img/header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-*{
-    font-family: irs;
+* {
+  font-family: irs;
+  margin: 0;
+  padding: 0;
 }
-body{
-    width: 100vw !important;
-    overflow-x: hidden
+body {
+  width: 100vw !important;
+  overflow-x: hidden;
 }
 .checked {
-    color: orange;
-  }
-  .card-header-row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .img-width{
-    width: 250px !important;
-    max-height: 208px !important;
-  }
-  .card-footer-flex{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .heart-background{
-    width: 35px;
-    height: 35px;
-    padding: 9px;
-    text-align: center;
-    vertical-align: middle;
-    border-radius: 50%;
-    background-color: violet;
-  }
-  footer{
-    background-color:  rgb(114, 114, 114);
-    color: rgb(255, 255, 255);
-
-  }
-  .footer-div{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .links{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  .footer-about-us{
-    text-justify: newspaper;
-  }
-  .card{
-    box-shadow: 10px 5px 5px rgb(167 ,167 ,167);
-  }
-  .heart-background:hover {
-    width: 50px;
-  }
+  color: rgb(255, 215, 0);
+}
+.not-checked {
+  color: rgb(114, 114, 114);
+}
+.card-header-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.img-width {
+  width: 250px !important;
+  max-height: 208px !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.card-footer-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.heart-background {
+  padding: 9px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 15px;
+  background-color: rgba(71, 4, 85, 0.973);
+  color: rgb(255, 255, 255);
+}
+footer {
+  background-color: rgb(114, 114, 114);
+  color: rgb(255, 255, 255);
+}
+.footer-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.footer-about-us {
+  text-align: justify;
+  text-justify: inter-word;
+}
+.card {
+  box-shadow: 4px 2px 5px rgb(167, 167, 167);
+}
+.heart-background:hover {
+  width: 50px;
+  content: "salam";
+}
+.heart-background {
+  transition: width 2s;
+}
+.favorite {
+  display: none;
+}
+.card-title {
+  font-size: 13px !important;
+}
