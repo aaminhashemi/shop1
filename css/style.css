@@ -44,7 +44,17 @@ body {
 }
 .heart-background {
   padding: 9px;
-  text-align: center;
+  direction: ltr;
+  height: 35px;
+  vertical-align: middle;
+  border-radius: 15px;
+  background-color: rgba(71, 4, 85, 0.973);
+  color: rgb(255, 255, 255);
+}
+.shop-background {
+  padding: 9px;
+  height: 35px;
+  direction: ltr;
   vertical-align: middle;
   border-radius: 15px;
   background-color: rgba(71, 4, 85, 0.973);
@@ -72,15 +82,22 @@ footer {
 .card {
   box-shadow: 4px 2px 5px rgb(167, 167, 167);
 }
-.heart-background:hover {
-  width: 50px;
-  content: "salam";
-}
-.heart-background {
-  transition: width 2s;
-}
+
 .favorite {
   display: none;
+}
+.heart-background:hover::after {
+  content: 'علاقه';
+  font-family: irs;
+  padding-left: 5px;
+  font-size: 80%;
+}
+
+.shop-background:hover::after {
+  content: 'خرید';
+  font-family: irs;
+  padding-left: 5px;
+  font-size: 80%;
 }
 .card-title {
   font-size: 13px !important;
