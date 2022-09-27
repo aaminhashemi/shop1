@@ -5,11 +5,11 @@
     url("../font/iransans/woff/IranSans.woff") format("woff");
 }
 .main-image {
+  background-image: url("../img/header.jpg");
+  background-size: cover;
+  background-position: center;
   height: 450px;
   width: 100%;
-  background-image: url("../img/header.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 * {
   font-family: irs;
@@ -29,6 +29,7 @@ body {
 .card-header-row {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-around;
 }
 .img-width {
@@ -36,6 +37,16 @@ body {
   max-height: 208px !important;
   background-size: contain;
   background-repeat: no-repeat;
+}
+.img-width2 {
+  width: 200px !important;
+  max-height: 208px !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.footer-about-us{
+  text-align: justify;
+
 }
 .card-footer-flex {
   display: flex;
@@ -64,6 +75,10 @@ footer {
   background-color: rgb(114, 114, 114);
   color: rgb(255, 255, 255);
 }
+.footer-custom-style{
+  padding-right: 50px !important;
+  padding-left: 50px !important;
+}
 .footer-div {
   display: flex;
   flex-direction: row;
@@ -74,10 +89,6 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-}
-.footer-about-us {
-  text-align: justify;
-  text-justify: inter-word;
 }
 .card {
   box-shadow: 4px 2px 5px rgb(167, 167, 167);
@@ -101,4 +112,11 @@ footer {
 }
 .card-title {
   font-size: 13px !important;
+}
+.mobile-header{
+  display: inline;
+  padding-right: 15px;
+  border-bottom: 2px solid red;
+  padding-bottom: 3px;
+  margin-bottom: 25px !important;
 }
